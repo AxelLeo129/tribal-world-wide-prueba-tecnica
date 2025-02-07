@@ -1,14 +1,12 @@
 package com.tp.models;
 
+import lombok.Data;
+
+@Data
 public class Name {
 
-    String first;
-    String last;
-
-    public Name(String first, String last) {
-        this.first = first;
-        this.last = last;
-    }
+    private String first;
+    private String last;
 
     public String getFirst() {
         return first;
@@ -25,4 +23,5 @@ public class Name {
     public void setLast(String last) {
         this.last = last;
     }
+
 }

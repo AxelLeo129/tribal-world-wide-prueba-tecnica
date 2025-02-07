@@ -1,15 +1,22 @@
 package com.tp.models;
 
-public class User1 {
+import lombok.Data;
 
-    String gender;
-    Name name;
-    Location location;
+@Data
+public class UserResult {
 
-    public User1(String gender, Name name, Location location) {
-        this.gender = gender;
-        this.name = name;
-        this.location = location;
+    private String gender;
+    private Name name;
+    private Location location;
+
+    public User toUser() {
+        return new User(
+                gender,
+                name.getFirst(),
+                name.getLast(),
+                location.getCity(),
+                location.getCountry()
+        );
     }
 
     public String getGender() {

@@ -1,7 +1,7 @@
 package com.tp.controllers;
 
-import com.tp.models.Users;
-import com.tp.services.ProductService;
+import com.tp.models.User;
+import com.tp.services.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -14,11 +14,11 @@ import java.util.List;
 public class UsersController {
 
     @Autowired
-    private ProductService productService;
+    private UserService userService;
 
     @GetMapping
-    public List<Users> getUsers() {
-        return productService.getUsers();
+    public List<User> getUsers() {
+        return userService.fetchUsers();
     }
 
 }

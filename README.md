@@ -34,6 +34,9 @@ Sigue estos pasos para configurar el proyecto localmente:
 
    Para ejecutar el proyecto, buscar el archivo main y ejecutalo con la aplicación.
 
+## Nota
+Dentro del servicio se dejó una pequeña explicación de la lógica que se implementó para optimizar las llamadas al API externa.
+
 ## Licencia
 
 MIT

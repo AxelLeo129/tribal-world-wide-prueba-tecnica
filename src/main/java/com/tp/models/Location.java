@@ -1,14 +1,12 @@
 package com.tp.models;
 
+import lombok.Data;
+
+@Data
 public class Location {
 
-    String city;
-    String country;
-
-    public Location(String city, String country) {
-        this.city = city;
-        this.country = country;
-    }
+    private String city;
+    private String country;
 
     public String getCity() {
         return city;
